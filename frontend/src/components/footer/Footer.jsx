@@ -4,26 +4,27 @@ const FooterArticle = ({ heading, links }) => (
   <article>
     <h5 className='font-bold text-gray-600 text-sm'>{heading}</h5>
     {links.map(({ label, url }, index) => (
-      <p className='pt-2' key={index}><a href={url}>{label}</a></p>
+      <p className='pt-2 hover:text-blue-600 hover:underline' key={index}><a href={url}>{label}</a></p>
     ))}
   </article>
 );
 
 const Socials = () => {
   const socialLinks = [
-    { title: "Facebook", url: "/" },
-    { title: "Instagram", url: "/" },
-    { title: "Twitter", url: "/" },
-    { title: "LinkedIn", url: "/" }
+    { title: "Facebook", url: "https://res.cloudinary.com/djdblxcxt/image/upload/v1695484891/Facebook-Logo_eehvjt.png" },
+    { title: "Instagram", url: "https://res.cloudinary.com/djdblxcxt/image/upload/v1695484915/Instagram-Logo_j063g8.png" },
+    { title: "Twitter", url: "https://res.cloudinary.com/djdblxcxt/image/upload/v1695484944/Twitter-Logo_z4i2si.png" },
   ];
 
   return (
     <div className="flex gap-36 -mt-1 text-sm">
       <div>
         <h5 className='font-bold text-gray-600 text-sm'>SOCIAL LINKS</h5>
-        {socialLinks.map(({ title, url }, index) => (
-          <abbr key={index} title={title}><a href={url}><img src={`/images/${title}-Logo.png`} alt={`${title}-Img`} /></a></abbr>
-        ))}
+        <div className='flex'>
+          {socialLinks.map(({ title, url }, index) => (
+            <abbr key={index} title={title}><a href={url}><img src={`/images/${title}-Logo.png`} alt={`${title}-Img`} /></a></abbr>
+          ))}
+        </div>
       </div>
     </div>
   );
@@ -112,7 +113,7 @@ const Footer = () => {
   ];
 
   return (
-    <div className='bg-gray-200'>
+    <div className='bg-gray-200 mt-12'>
       <footer className="grid grid-cols-4 gap-x-28 gap-y-6 px-16 py-6 text-sm">
         {sections.map(({ heading, links }, index) => (
           <FooterArticle key={index} heading={heading} links={links} />
