@@ -1,16 +1,93 @@
-import React from 'react'
+import React from 'react';
+import Footer from '../../components/footer/Footer';
 
 const About = () => {
   return (
     <>
-      <div>
+      <div className="bg-cover bg-center" style={{ height: "20rem", backgroundImage: "url('https://res.cloudinary.com/djdblxcxt/image/upload/v1712809843/About-banner_ws3t3l.webp')" }}>
         <div>
-          About
+          <div className="flex items-center gap-2 p-4 md:p-6 lg:p-8 lg:mx-auto">
+
+            <div className="flex gap-4 ml-auto mr-10">
+              <a href="/" className="text-white font-semibold hover:text-blue-500">Search</a>
+              <a href="/Support/Help.html" className="text-white font-semibold hover:text-blue-500">Support</a>
+              <a href="/Sign/Signup.html" className="text-white font-semibold hover:text-blue-500">Sign-In</a>
+            </div>
+          </div>
         </div>
 
+        <div className="ml-16 md:ml-20 lg:ml-24 font-bold text-4xl text-gray-300">
+          <h1>ABOUT US</h1>
+        </div>
+
+        <div>
+          <div className="bg-gray-100 w-full md:w-11/12 lg:w-10/12 xl:w-8/12 mx-auto mt-16 md:mt-20 lg:mt-24 p-6 md:p-8 lg:p-10 xl:p-12 rounded-lg">
+            <h1 className="text-center py-6">About <span className="text-blue-500"><span className='text-blue-800 font-bold'>BLUE</span> Wing Airways</span></h1>
+            <section id="about">
+              <div className="max-w-3xl mx-auto">
+                <p className="mb-4">Welcome to Blue Wing Airways, your premier choice for air travel. With a commitment to safety,
+                  comfort, and exceptional service, we strive to provide an unparalleled flying experience.</p>
+                <p className="mb-4">Our fleet of modern aircraft is equipped with state-of-the-art technology and amenities, ensuring
+                  a smooth and enjoyable journey for our passengers. From short domestic flights to long-haul
+                  international trips, we cover a wide range of destinations across the globe.</p>
+                <p className="mb-4">At Blue Wing Airways, we value our customers and their satisfaction is our top priority. Our
+                  friendly and professional staff is dedicated to delivering a personalized and memorable travel
+                  experience for each passenger.</p>
+                <p className="mb-8">Explore the world with Blue Wing Airways and discover the true joy of flying. Book your next
+                  flight with us and embark on an extraordinary adventure!</p>
+
+                <div className="flex gap-6 mb-8">
+                  <div className="w-full md:w-1/2">
+                    <h3 className="font-bold mb-2">The Blue Wing Group</h3>
+                    <p className="mb-4">Blue Wing Airways is a part of the renowned Blue Wing Group, a leading aviation
+                      conglomerate with a strong presence in the industry. The group is committed to
+                      delivering excellence in air travel and operates multiple airlines, catering to various
+                      regions and market segments.</p>
+                  </div>
+                  <div className="w-full md:w-1/2">
+                    <h3 className="font-bold mb-2">Ownership</h3>
+                    <p className="mb-4">Blue Wing Airways is privately owned and operated. The company is backed by a team of
+                      seasoned aviation professionals and experienced investors who bring a wealth of
+                      knowledge and expertise to the airline.</p>
+                  </div>
+                  <div className="w-full md:w-1/2">
+                    <h3 className="font-bold mb-2">Establishment</h3>
+                    <p className="mb-4">Blue Wing Airways was established in 2023 with the vision of providing exceptional air
+                      travel experiences to passengers around the world. Since then, we have grown steadily,
+                      expanding our route network and fleet size to meet the evolving needs of our customers.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex gap-6">
+                  <div className="w-64 bg-gray-200 p-6 rounded-lg">
+                    <img src="https://res.cloudinary.com/djdblxcxt/image/upload/v1695484844/About-Safety_yrfrdj.jpg" alt="Safety" className="mx-auto mb-4 h-40" />
+                    <h3 className="font-bold mb-2">Safety First</h3>
+                    <p className="text-gray-700">We prioritize the safety and security of our passengers. Our experienced pilots and crew
+                      adhere to the highest safety standards, ensuring a worry-free travel experience.</p>
+                  </div>
+                  <div className="w-64 bg-gray-200 p-6 rounded-lg">
+                    <img src="https://res.cloudinary.com/djdblxcxt/image/upload/v1695484952/unmatched-comfort_q5tv00.webp" alt="Comfort" className="mx-auto mb-4 h-40" />
+                    <h3 className="font-bold mb-2">Unmatched Comfort</h3>
+                    <p className="text-gray-700">Experience unmatched comfort in our spacious cabins with plush seating, ample legroom,
+                      and in-flight entertainment. Sit back, relax, and enjoy your journey with us.</p>
+                  </div>
+                  <div className="w-64 bg-gray-200 p-6 rounded-lg">
+                    <img src="https://res.cloudinary.com/djdblxcxt/image/upload/v1695484896/exceptional-service_pl2m5e.jpg" alt="Exceptional Service" className="mx-auto mb-4" />
+                    <h3 className="font-bold mb-2">Exceptional Service</h3>
+                    <p className="text-gray-700">Our dedicated cabin crew is committed to delivering exceptional service. From a warm
+                      welcome to personalized assistance, we go the extra mile to make your flight memorable.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+        <Footer />
       </div>
     </>
   )
 }
 
-export default About
+export default About;
