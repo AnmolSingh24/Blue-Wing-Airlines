@@ -76,7 +76,7 @@ const PrepareToTravel = () => {
             <p className="text-blue-600 text-2xl pt-16"><span className='font-bold text-blue-800'>BLUE</span> WING CABIN</p>
             <div className="travel-img flex justify-center items-center mt-8">
                 <div>
-                    <img src="https://res.cloudinary.com/djdblxcxt/image/upload/v1712762014/business-class-cabin_xb8nnp.png" alt="/generous-baggage" className="w-[38rem] h-[35rem] -mb-4 rounded-lg" />
+                    <img src="https://res.cloudinary.com/djdblxcxt/image/upload/v1712805043/business-class-cabin_vs0fmv.jpg" alt="/generous-baggage" className="w-[38rem] h-[35rem] -mb-4 rounded-lg" />
                     <div className="btn">
                         <a href="/Travel/Baggage/Baggage.html" className="px-10 py-2 text-lg font-bold bg-blue-200 text-blue-900 border-4 border-white hover:bg-blue-700 hover:text-white transition duration-500 rounded-lg">Know More</a>
                     </div>

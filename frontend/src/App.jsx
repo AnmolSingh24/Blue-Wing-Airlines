@@ -1,9 +1,9 @@
-import Home from './pages/home/Home.jsx'
-import { Route, Routes } from "react-router-dom";
-import { Toaster } from "react-hot-toast";
+import React from 'react';
+import { Route, Routes } from 'react-router-dom';
+import Home from './pages/home/Home';
+import { Toaster } from 'react-hot-toast';
 
 function App() {
-
   return (
     <>
       <Routes>
@@ -11,7 +11,7 @@ function App() {
       </Routes>
       <Toaster />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

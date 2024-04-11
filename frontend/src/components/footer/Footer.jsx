@@ -120,7 +120,7 @@ const Footer = () => {
         ))}
         <Socials />
       </footer>
-      <div className="text-center p-4">
+      <div className="text-center p-3 -mt-2">
         <p>Copyright © 2023 Blue Wing Ltd</p>
         <p>All rights reserved. Use of this website indicates your compliance with our Privacy Policy, Conditions of Carriage, Terms and Conditions.</p>
       </div>
