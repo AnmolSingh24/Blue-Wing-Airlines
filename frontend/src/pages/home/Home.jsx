@@ -17,7 +17,7 @@ function CarouselSlider() {
     return (
         <Carousel activeIndex={index} onSelect={handleSelect}>
             <Carousel.Item>
-                <img src="https://res.cloudinary.com/djdblxcxt/image/upload/v1696002513/Carasuel-1_oqwzb7.webp" className='w-full h-96' text="Third slide" />
+                <img src="https://res.cloudinary.com/djdblxcxt/image/upload/v1696002513/Carasuel-3_iriinl.webp" className='w-full h-96' text="Third slide" />
                 <Carousel.Caption>
                     <h1 className='font-semibold text-4xl'>FLY PREMIUM ECONOMY AT SPECIAL FARES</h1>
                     <p className='text-lg'>Starting @ INR 136,699* for IN - USA USD 1599* for USA - IN</p>
@@ -132,17 +132,16 @@ const PrepareToTravel = () => {
     );
 };
 
-// const AsideSection = () => {
-//     return (
-//         <aside className="mt-20 ml-96">
-//             <div>
-//                 <abbr title="Ask Devi">
-//                     <img src="/images/Aside-Message-Img.png" alt="Aside-Message-Img" className="h-32 w-32 rounded-full bg-blue-300 shadow-md" />
-//                 </abbr>
-//             </div>
-//         </aside>
-//     );
-// };
+const AsideSection = () => {
+    return (
+        <aside>
+            <button className='flex items-center justify-center gap-2 bg-blue-200 w-36 p-2 rounded-full ml-auto mr-6'>
+                <p className='font-bold text-lg text-gray-600'>Ask devi</p>
+                <img src="https://res.cloudinary.com/djdblxcxt/image/upload/v1696690879/upload/ef7dxqgzydru8uyp0uqv.png" alt="Ask-Devi-Img" className="h-12 w-12 rounded-full bg-blue-300 shadow-md" />
+            </button>
+        </aside>
+    );
+};
 
 const Home = () => {
     return (
@@ -150,7 +149,7 @@ const Home = () => {
             <div>
                 <Header />
                 <PrepareToTravel />
-                {/* <AsideSection /> */}
+                <AsideSection />
                 <Footer />
             </div>
         </>
