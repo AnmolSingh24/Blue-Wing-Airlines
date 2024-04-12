@@ -1,7 +1,6 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Home from './pages/home/Home';
-import { Toaster } from 'react-hot-toast';
 import About from './pages/about/About';
 import Destination from './pages/destination/Destination';
 import BookFlights from './pages/book/BookFlights';
@@ -10,6 +9,7 @@ import ETickets from "./pages/tickets/ETickets"
 import FlightStatus from "./pages/flightstatus/FlightStatus"
 import Support from "./pages/support/Support"
 import Profile from "./pages/profile/Profile"
+import { Toaster } from "react-hot-toast"
 
 function App() {
   return (
