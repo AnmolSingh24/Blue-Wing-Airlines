@@ -48,6 +48,19 @@ function CarouselSlider() {
     );
 }
 
+const AsideSection = () => {
+    return (
+        <div className='fixed'>
+            <aside className='relative flex justify-end z-10 w-20 h-20 top-[35rem] left-[88rem]'>
+                <button className='absolute flex items-center gap-2 bg-blue-200 w-36 p-2 rounded-full'>
+                    <p className='font-bold text-lg text-gray-600'>Ask devi</p>
+                    <img src="https://res.cloudinary.com/djdblxcxt/image/upload/v1696690879/upload/ef7dxqgzydru8uyp0uqv.png" alt="Ask-Devi-Img" className="h-12 w-12 rounded-full bg-blue-300 shadow-md" />
+                </button>
+            </aside>
+        </div>
+    );
+};
+
 const PrepareToTravel = () => {
     return (
         <div className="text-center pt-2">
@@ -82,11 +95,11 @@ const PrepareToTravel = () => {
                     </div>
                 </div>
                 <div className="ml-8">
-                    <img src="https://res.cloudinary.com/djdblxcxt/image/upload/v1712761975/premium-economy-cabin_n8enfn.png" alt="before-you-fly" className='w-[38rem] h-60 -mb-4 rounded-lg' />
+                    <img src="https://res.cloudinary.com/djdblxcxt/image/upload/v1712892777/premium-economy-class_valrld.png" alt="before-you-fly" className='w-[38rem] h-[15.8rem] -mb-4 rounded-lg' />
                     <div className="btn">
                         <a href="/Travel/Documents/Visa.html" className="px-10 py-2 text-lg font-bold bg-blue-200 text-blue-900 border-4 border-white hover:bg-blue-700 hover:text-white transition duration-500 rounded-lg">Know More</a>
                     </div>
-                    <img src="https://res.cloudinary.com/djdblxcxt/image/upload/v1712762058/standard-economy-cabin_nkmmxk.png" alt="airport-information" className='w-[38rem] h-60 mt-8 -mb-4 rounded-lg' />
+                    <img src="https://res.cloudinary.com/djdblxcxt/image/upload/v1712764058/standard-economy-cabin_nkmmxk.png" alt="airport-information" className='w-[38rem] h-[15.8rem] mt-8 -mb-4 rounded-lg' />
                     <div className="btn">
                         <a href="/Travel/Baggage/Baggage.html" className="px-10 py-2 text-lg font-bold bg-blue-200 text-blue-900 border-4 border-white hover:bg-blue-700 hover:text-white transition duration-500 rounded-lg">Know More</a>
                     </div>
@@ -132,24 +145,13 @@ const PrepareToTravel = () => {
     );
 };
 
-const AsideSection = () => {
-    return (
-        <aside>
-            <button className='flex items-center justify-center gap-2 bg-blue-200 w-36 p-2 rounded-full ml-auto mr-6'>
-                <p className='font-bold text-lg text-gray-600'>Ask devi</p>
-                <img src="https://res.cloudinary.com/djdblxcxt/image/upload/v1696690879/upload/ef7dxqgzydru8uyp0uqv.png" alt="Ask-Devi-Img" className="h-12 w-12 rounded-full bg-blue-300 shadow-md" />
-            </button>
-        </aside>
-    );
-};
-
 const Home = () => {
     return (
         <>
             <div>
                 <Header />
-                <PrepareToTravel />
                 <AsideSection />
+                <PrepareToTravel />
                 <Footer />
             </div>
         </>

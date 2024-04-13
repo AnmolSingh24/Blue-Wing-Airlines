@@ -9,8 +9,8 @@ const Header = () => {
             <div className='flex gap-12 text-lg font-semibold pr-16 cursor-pointer'>
                 <Link to="/about">About</Link>
                 <Link to="/destination">Destination</Link>
-                <Link to="/bookflights">Book Flights</Link>
-                <Link to="/hotels">Hotels</Link>
+                <Link to="/searchflights">Flights</Link>
+                <Link to="/searchhotels">Hotels</Link>
                 <Link to="/etickets">E-Tickets</Link>
                 <Link to="/flightstatus">Flight Status</Link>
                 <Link to="/support">Support</Link>

@@ -20,9 +20,13 @@ const Socials = () => {
     <div className="flex gap-36 -mt-1 text-sm">
       <div>
         <h5 className='font-bold text-gray-600 text-sm'>SOCIAL LINKS</h5>
-        <div className='flex'>
+        <div className='flex gap-4 mt-4'>
           {socialLinks.map(({ title, url }, index) => (
-            <abbr key={index} title={title}><a href={url}><img src={`/images/${title}-Logo.png`} alt={`${title}-Img`} /></a></abbr>
+            <abbr key={index} title={title}>
+              <a href={url}>
+                <img src={url} alt={`${title}-Img`} className='w-8' />
+              </a>
+            </abbr>
           ))}
         </div>
       </div>
