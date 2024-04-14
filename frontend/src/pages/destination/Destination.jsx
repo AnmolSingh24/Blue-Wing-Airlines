@@ -166,7 +166,7 @@ const Destination = () => {
           <h1 className="text-start ml-16 md:ml-20 lg:ml-24 font-bold text-4xl text-gray-50">Destinations</h1>
           <div className="grid grid-cols-5 gap-1 mx-28 mt-40">
             {destinations.map((destination, index) => (
-              <div key={index} className="w-60 h-70 mb-4 bg-white p-3 mr-0 rounded-lg opacity-1 transform translate-x-0 duration-800 transition-transform ease-in-out hover:shadow-lg hover:scale-100 hover:translate-y-[-5px]">
+              <div key={index} className="w-60 h-70 mb-4 bg-white p-3 mr-0 rounded-lg opacity-1 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-105 duration-300 ...">
                 <img src={destination.img} alt={destination.title} className="w-full h-32 object-cover rounded-md" />
                 <h3 className="mt-2 text-center font-bold">{destination.title}</h3>
                 <p className="mt-1">{destination.info}</p>
