@@ -8,7 +8,7 @@ const About = () => {
         <div>
           <div className="flex items-center gap-2 p-4 md:p-6 lg:p-8 lg:mx-auto">
 
-            <div className="flex gap-4 ml-auto mr-10">
+            <div className="flex gap-4 ml-auto mr-18">
               <a href="/" className="text-white font-semibold hover:text-blue-500">Search</a>
               <a href="/Support/Help.html" className="text-white font-semibold hover:text-blue-500">Support</a>
               <a href="/Sign/Signup.html" className="text-white font-semibold hover:text-blue-500">Sign-In</a>
