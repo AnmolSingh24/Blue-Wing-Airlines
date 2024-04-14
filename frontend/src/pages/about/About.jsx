@@ -5,26 +5,15 @@ const About = () => {
   return (
     <>
       <div className="bg-cover bg-center" style={{ height: "20rem", backgroundImage: "url('https://res.cloudinary.com/djdblxcxt/image/upload/v1712809843/About-banner_ws3t3l.webp')" }}>
-        <div>
-          <div className="flex items-center gap-2 p-4 md:p-6 lg:p-8 lg:mx-auto">
-
-            <div className="flex gap-4 ml-auto mr-18">
-              <a href="/" className="text-white font-semibold hover:text-blue-500">Search</a>
-              <a href="/Support/Help.html" className="text-white font-semibold hover:text-blue-500">Support</a>
-              <a href="/Sign/Signup.html" className="text-white font-semibold hover:text-blue-500">Sign-In</a>
-            </div>
-          </div>
-        </div>
-
-        <div className="ml-16 md:ml-20 lg:ml-24 font-bold text-4xl text-gray-300">
+        <div className="ml-16 md:ml-20 lg:ml-24 font-bold text-4xl text-gray-300 lg:p-16">
           <h1>ABOUT US</h1>
         </div>
 
         <div>
-          <div className="bg-gray-100 w-full md:w-11/12 lg:w-10/12 xl:w-8/12 mx-auto mt-16 md:mt-20 lg:mt-24 p-6 md:p-8 lg:p-10 xl:p-12 rounded-lg">
-            <h1 className="text-center py-6">About <span className="text-blue-500"><span className='text-blue-800 font-bold'>BLUE</span> Wing Airlines</span></h1>
-            <section id="about">
-              <div className="max-w-3xl mx-auto">
+          <div className="bg-gray-100 w-full md:w-11/12 lg:w-10/12 xl:w-8/12 mx-auto lg:mt-24 p-6 md:p-8 rounded-lg">
+            <h1 className="text-center py-6 text-2xl">About <span className="text-blue-500"><span className='text-blue-800 font-bold'>BLUE</span> Wing Airlines</span></h1>
+            <section>
+              <div className="max-w-4xl mx-auto leading-6">
                 <p className="mb-4">Welcome to Blue Wing Airlines, your premier choice for air travel. With a commitment to safety,
                   comfort, and exceptional service, we strive to provide an unparalleled flying experience.</p>
                 <p className="mb-4">Our fleet of modern aircraft is equipped with state-of-the-art technology and amenities, ensuring
@@ -59,7 +48,7 @@ const About = () => {
                   </div>
                 </div>
 
-                <div className="flex gap-6">
+                <div className="flex items-center justify-evenly">
                   <div className="w-64 bg-gray-200 p-2.5 rounded-lg">
                     <img src="https://res.cloudinary.com/djdblxcxt/image/upload/v1695484844/About-Safety_yrfrdj.jpg" alt="Safety" className="mx-auto mb-4 h-40" />
                     <h3 className="font-bold mb-2 text-center">Safety First</h3>

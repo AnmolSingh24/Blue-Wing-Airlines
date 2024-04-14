@@ -17,28 +17,28 @@ function CarouselSlider() {
     return (
         <Carousel activeIndex={index} onSelect={handleSelect}>
             <Carousel.Item>
-                <img src="https://res.cloudinary.com/djdblxcxt/image/upload/v1696002513/Carasuel-3_iriinl.webp" className='w-full h-96' text="Third slide" />
+                <img src="https://res.cloudinary.com/djdblxcxt/image/upload/v1696002513/Carasuel-3_iriinl.webp" className='w-full h-full' text="Third slide" />
                 <Carousel.Caption>
                     <h1 className='font-semibold text-4xl'>FLY PREMIUM ECONOMY AT SPECIAL FARES</h1>
                     <p className='text-lg'>Starting @ INR 136,699* for IN - USA USD 1599* for USA - IN</p>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
-                <img src="https://res.cloudinary.com/djdblxcxt/image/upload/v1696002515/Carasuel-2_ubc8w7.webp" className='w-full h-96' text="Second slide" />
+                <img src="https://res.cloudinary.com/djdblxcxt/image/upload/v1696002515/Carasuel-2_ubc8w7.webp" className='w-full h-full' text="Second slide" />
                 <Carousel.Caption>
                     <h1 className='font-semibold text-4xl'>Second slide label</h1>
                     <p className='text-lg'>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
-                <img src="https://res.cloudinary.com/djdblxcxt/image/upload/v1712760432/Carousel1_uhrxca.webp" className='w-full h-96' text="First slide" />
+                <img src="https://res.cloudinary.com/djdblxcxt/image/upload/v1712760432/Carousel1_uhrxca.webp" className='w-full h-[28.9rem]' text="First slide" />
                 <Carousel.Caption>
                     <h1 className='font-semibold text-4xl'>First slide label</h1>
                     <p className='text-lg'>Nulla vitae elit libero, a pharetra augue mollis interdum</p>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
-                <img src="https://res.cloudinary.com/djdblxcxt/image/upload/v1696002513/Carasuel-4_bcb2gb.webp" className='w-full h-96' text="Third slide" />
+                <img src="https://res.cloudinary.com/djdblxcxt/image/upload/v1696002513/Carasuel-4_bcb2gb.webp" className='w-full h-full' text="Third slide" />
                 <Carousel.Caption>
                     <h1 className='font-semibold text-4xl'>Third slide label</h1>
                     <p className='text-lg'>Praesent commodo cursus magna, vel scelerisque nisl consectetur</p>

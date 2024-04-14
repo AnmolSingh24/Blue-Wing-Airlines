@@ -1,20 +1,10 @@
 import React, { useState } from 'react';
 import Footer from '../../components/footer/Footer';
 import { FiDownload } from "react-icons/fi";
-import { Link } from 'react-router-dom';
-
-export const HeaderLinks = () => {
-  return (
-    <div className="flex gap-4 ml-auto mr-20">
-      <Link to="/Support/Help.html" className="text-white font-semibold hover:text-blue-500">FAQs</Link>
-      <Link to="/Sign/Signup.html" className="text-white font-semibold hover:text-blue-500">Sign-In</Link>
-    </div>
-  );
-};
 
 export const ETicketHeader = () => {
   return (
-    <div className="ml-16 md:ml-20 lg:ml-24 font-bold text-4xl text-gray-300">
+    <div className="ml-16 md:ml-20 lg:ml-24 font-bold text-4xl text-gray-300 lg:p-16">
       <h1>E-TICKET</h1>
     </div>
   );
@@ -46,14 +36,11 @@ const ETicket = () => {
 
   return (
     <div className="bg-cover bg-center bg-no-repeat" style={{ height: "20rem", backgroundImage: "url('https://res.cloudinary.com/djdblxcxt/image/upload/v1712988409/ETickets_qowh54.jpg')" }}>
-      <div className="flex items-center gap-2 p-4 md:p-6 lg:p-8 lg:mx-auto">
-        <HeaderLinks />
-      </div>
-
       <ETicketHeader />
 
-      {/* {isTicketGenerated ? */}
-      (<div className="bg-violet-200 w-96 md:w-10/12 lg:w-9/12 xl:w-[51rem] mx-auto mt-16 md:mt-20 lg:mt-24 p-6 md:p-8 lg:p-10 xl:p-12 rounded">
+      {/* {isTicketGenerated ?
+      (*/}
+      <div className="bg-violet-200 w-96 md:w-10/12 lg:w-9/12 xl:w-[51rem] mx-auto mt-10 p-6 md:p-8 lg:p-10 xl:p-12 rounded">
         <div className="bg-violet-300 w-96 md:w-11/12 lg:w-10/12 xl:w-[45rem] mx-auto mt-1 md:mt-20 lg:mt-24 pt-6 md:p-8 lg:p-10 xl:p-12 rounded">
           <h1 className="text-center font-bold text-2xl text-blue-800">E-TICKET</h1>
 
