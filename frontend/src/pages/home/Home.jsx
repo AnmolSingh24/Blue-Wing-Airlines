@@ -52,17 +52,17 @@ const ReadyToTravel = ({ img1, img2, img3, link1, link2, link3 }) => {
     return (
         <div className="travel-img flex justify-center items-center mt-8">
             <div>
-                <img src={img1} />
+                <img src={img1} className='rounded' />
                 <div>
                     <a href="/Travel/Baggage/Baggage.html" className="px-10 py-2 text-lg font-bold bg-blue-200 text-blue-900 border-4 border-white hover:bg-blue-700 hover:text-white transition duration-500 rounded-lg">{link1}</a>
                 </div>
             </div>
             <div className="ml-4">
-                <img src={img2} alt="before-you-fly" className='w-[38rem] h-60 -mb-4 rounded-lg' />
+                <img src={img2} alt="before-you-fly" className='w-[38rem] h-60 -mb-4 rounded' />
                 <div>
                     <a href="/Travel/Documents/Visa.html" className="px-10 py-2 text-lg font-bold bg-blue-200 text-blue-900 border-4 border-white hover:bg-blue-700 hover:text-white transition duration-500 rounded-lg">{link2}</a>
                 </div>
-                <img src={img3} alt="airport-information" className='w-[38rem] h-52 mt-8 -mb-4 rounded-lg' />
+                <img src={img3} alt="airport-information" className='w-[38rem] h-52 mt-8 -mb-4 rounded' />
                 <div>
                     <a href="/Travel/Baggage/Baggage.html" className="px-10 py-2 text-lg font-bold bg-blue-200 text-blue-900 border-4 border-white hover:bg-blue-700 hover:text-white transition duration-500 rounded-lg">{link3}</a>
                 </div>
